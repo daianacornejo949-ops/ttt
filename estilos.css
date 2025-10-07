@@ -1,0 +1,137 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #c6ffdd, #fbd786, #f7797d);
+  color: #1e1e1e;
+}
+header {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+header p {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.98);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.features li {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+  position: relative;
+  padding-left: 25px;
+}
+
+.features li::before {
+  content: "✔";
+  color: #4caf50;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+.precio-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.precio {
+  font-size: 2em;
+  font-weight: bold;
+  color: #e53935;
+  margin-top: 10px;
+}
+
+
+.botones {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff9800;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 30px;
+  margin: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  background: #f57c00;
+  transform: scale(1.05);
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .precio {
+    font-size: 1.6em;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 0.9em;
+  }
+}
